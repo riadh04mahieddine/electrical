@@ -20,7 +20,12 @@ const Header = () => {
 };
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
-declare const ttq: any;
+// Define a proper type for TikTok tracking object
+interface TikTokTrackingObject {
+  track: (event: string, parameters?: Record<string, unknown>) => void;
+}
+
+declare const ttq: TikTokTrackingObject;
 
 const ProductSection = () => {
   const [selectedOption, setSelectedOption] = useState(2);

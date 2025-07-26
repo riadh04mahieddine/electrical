@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useEffect } from 'react';
@@ -33,7 +34,12 @@ const Footer = () => {
   );
 };
 
-declare const ttq: any;
+// Define a proper type for TikTok tracking object
+interface TikTokTrackingObject {
+  track: (event: string, parameters?: Record<string, unknown>) => void;
+}
+
+declare const ttq: TikTokTrackingObject;
 
 const ThankYouPage = () => {
   useEffect(() => {
@@ -79,7 +85,7 @@ const ThankYouPage = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-800">Shipping</h3>
-                  <p className="text-gray-600">Once your order ships, we'll send you another email with tracking information.</p>
+                  <p className="text-gray-600">We&apos;ll send you an email once your order ships. You won&apos;t miss it!</p>
                 </div>
               </div>
             </div>
