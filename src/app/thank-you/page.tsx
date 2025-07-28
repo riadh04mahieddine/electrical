@@ -58,13 +58,20 @@ const ThankYouContent = () => {
       // Use the standard 'Purchase' event instead of 'CompletePayment'
       // Include value data for better conversion tracking
       ttq.track('Purchase', {
-        content_type: 'product',
-        content_id: 'power_strip',
+        content_type: 'product_group',
+        content_id: ['power_strip_001'],  // Format attendu par TikTok VSA
         content_name: 'Rotative Extensible Power Strip',
         quantity: 1,
         currency: 'USD',
         value: 59.99, // Default to the most popular bundle price
-        order_id: sessionId // Include Stripe session ID as order ID
+        order_id: sessionId, // Include Stripe session ID as order ID
+        contents: [{
+          content_id: 'power_strip_001',
+          content_type: 'product',
+          content_name: 'Rotative Extensible Power Strip',
+          quantity: 1,
+          price: 59.99
+        }]
       });
     }
   }, [searchParams]);
