@@ -2,6 +2,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CheckCircleIcon, CubeTransparentIcon, EnvelopeIcon, TruckIcon } from '@heroicons/react/24/outline';
@@ -42,8 +43,16 @@ interface TikTokTrackingObject {
 declare const ttq: TikTokTrackingObject;
 
 const ThankYouPage = () => {
+  const searchParams = useSearchParams();
+  
   useEffect(() => {
-    if (typeof ttq !== 'undefined') {
+    // Only trigger Purchase event if user is coming from a successful payment
+    const paymentSuccess = searchParams.get('payment_success');
+    const sessionId = searchParams.get('session_id');
+    
+    if (typeof ttq !== 'undefined' && paymentSuccess === 'true' && sessionId) {
+      console.log('Triggering Purchase event with session ID:', sessionId);
+      
       // Use the standard 'Purchase' event instead of 'CompletePayment'
       // Include value data for better conversion tracking
       ttq.track('Purchase', {
@@ -52,10 +61,11 @@ const ThankYouPage = () => {
         content_name: 'Rotative Extensible Power Strip',
         quantity: 1,
         currency: 'USD',
-        value: 59.99 // Default to the most popular bundle price
+        value: 59.99, // Default to the most popular bundle price
+        order_id: sessionId // Include Stripe session ID as order ID
       });
     }
-  }, []);
+  }, [searchParams]);
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
