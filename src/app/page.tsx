@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { ShieldCheckIcon, FireIcon, ArrowsPointingOutIcon, ArrowPathIcon, TruckIcon, CheckBadgeIcon, PlusIcon, MinusIcon, BoltIcon, ClockIcon } from '@heroicons/react/24/outline';
@@ -381,9 +382,9 @@ const Footer = () => {
     <footer className="bg-transparent border-t border-secondary/50 py-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-text-primary/60">
             <div className="flex justify-center space-x-6 mb-4">
-                <a href="#" className="hover:underline">Contact</a>
-                <a href="#" className="hover:underline">Privacy Policy</a>
-                <a href="#" className="hover:underline">Terms of Service</a>
+                <Link href="/contact" className="hover:underline">Contact</Link>
+                <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
+                <Link href="/terms-of-service" className="hover:underline">Terms of Service</Link>
             </div>
             <p>© 2025 MULTIPRISE. All rights reserved.</p>
         </div>

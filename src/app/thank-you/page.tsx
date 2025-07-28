@@ -27,8 +27,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p>&copy; {new Date().getFullYear()} MultiPrise. All rights reserved.</p>
         <div className="flex justify-center gap-4 mt-4">
-          <Link href="#" className="hover:text-gray-900">Privacy Policy</Link>
-          <Link href="#" className="hover:text-gray-900">Terms of Service</Link>
+          <Link href="/contact" className="hover:text-gray-900">Contact</Link>
+          <Link href="/privacy-policy" className="hover:text-gray-900">Privacy Policy</Link>
+          <Link href="/terms-of-service" className="hover:text-gray-900">Terms of Service</Link>
         </div>
       </div>
     </footer>
