@@ -44,7 +44,16 @@ declare const ttq: TikTokTrackingObject;
 const ThankYouPage = () => {
   useEffect(() => {
     if (typeof ttq !== 'undefined') {
-      ttq.track('CompletePayment');
+      // Use the standard 'Purchase' event instead of 'CompletePayment'
+      // Include value data for better conversion tracking
+      ttq.track('Purchase', {
+        content_type: 'product',
+        content_id: 'power_strip',
+        content_name: 'Rotative Extensible Power Strip',
+        quantity: 1,
+        currency: 'USD',
+        value: 59.99 // Default to the most popular bundle price
+      });
     }
   }, []);
   return (

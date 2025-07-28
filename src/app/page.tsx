@@ -66,7 +66,19 @@ const ProductSection = () => {
 
   const handleCheckout = async () => {
     if (typeof ttq !== 'undefined') {
-      ttq.track('InitiateCheckout');
+      // Get the selected product option data
+      const selectedProduct = quantityOptions[selectedOption - 1];
+      const price = parseFloat(selectedProduct.price.replace('$', ''));
+      
+      // Track InitiateCheckout with product data
+      ttq.track('InitiateCheckout', {
+        content_type: 'product',
+        content_id: 'power_strip',
+        content_name: 'Rotative Extensible Power Strip',
+        quantity: selectedOption,
+        currency: 'USD',
+        value: price
+      });
     }
     setLoading(true);
     try {
