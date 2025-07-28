@@ -69,7 +69,7 @@ const ContactPage = () => {
         subject: '',
         message: ''
       });
-    } catch (error) {
+    } catch (_error) {
       setSubmitError('There was an error submitting your message. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -99,7 +99,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-medium">Email</h3>
-                    <p className="text-gray-500">support@multiprise.com</p>
+                    <p className="text-gray-500">We&apos;ll send you an email once your order ships. You won&apos;t miss it!</p>
                   </div>
                 </div>
                 
@@ -137,7 +137,7 @@ const ContactPage = () => {
               {submitSuccess ? (
                 <div className="bg-green-50 border border-green-200 rounded-md p-4 mb-6">
                   <p className="text-green-700">
-                    Thank you for your message! We'll get back to you as soon as possible.
+                    Thank you for your message! We&apos;ll get back to you as soon as possible.
                   </p>
                 </div>
               ) : (

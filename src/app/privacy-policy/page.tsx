@@ -48,7 +48,7 @@ const PrivacyPolicyPage = () => {
             
             <h2 className="text-xl font-semibold mt-8 mb-4">1. Introduction</h2>
             <p>
-              MultiPrise ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and make purchases.
+              MultiPrise (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and make purchases.
             </p>
             <p>
               Please read this Privacy Policy carefully. By accessing or using our website, you acknowledge that you have read, understood, and agree to be bound by all the terms outlined in this Privacy Policy.
@@ -131,7 +131,7 @@ const PrivacyPolicyPage = () => {
               <li>The right to data portability</li>
             </ul>
             <p>
-              To exercise these rights, please contact us using the information provided in the "Contact Us" section.
+              To exercise these rights, please contact us using the information provided in the &quot;Contact Us&quot; section.
             </p>
             
             <h2 className="text-xl font-semibold mt-8 mb-4">9. Children's Privacy</h2>
@@ -141,7 +141,7 @@ const PrivacyPolicyPage = () => {
             
             <h2 className="text-xl font-semibold mt-8 mb-4">10. Changes to This Privacy Policy</h2>
             <p>
-              We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
+              We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date.
             </p>
             <p>
               You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.

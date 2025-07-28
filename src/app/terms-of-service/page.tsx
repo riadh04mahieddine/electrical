@@ -48,7 +48,7 @@ const TermsOfServicePage = () => {
             
             <h2 className="text-xl font-semibold mt-8 mb-4">1. Introduction</h2>
             <p>
-              Welcome to MultiPrise. These Terms of Service ("Terms") govern your use of our website and the purchase of products offered by MultiPrise ("we," "our," or "us").
+              Welcome to MultiPrise. These Terms of Service (&quot;Terms&quot;) govern your use of our website and the purchase of products offered by MultiPrise (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;).
             </p>
             <p>
               By accessing our website and/or purchasing our products, you agree to be bound by these Terms. If you do not agree to all the Terms, you must not access the website or purchase our products.
@@ -73,7 +73,7 @@ const TermsOfServicePage = () => {
               <li>Use our website in any way that violates any applicable laws or regulations</li>
               <li>Use our website to transmit or send unsolicited or unauthorized advertising or promotional materials</li>
               <li>Attempt to gain unauthorized access to our website, user accounts, or computer systems</li>
-              <li>Engage in any conduct that restricts or inhibits anyone's use or enjoyment of our website</li>
+              <li>Engage in any conduct that restricts or inhibits anyone&apos;s use or enjoyment of our website</li>
               <li>Use our website in a manner that could damage, disable, overburden, or impair it</li>
               <li>Use any robot, spider, or other automatic device to access our website</li>
               <li>Copy, modify, distribute, sell, or lease any part of our website without our permission</li>
@@ -120,7 +120,7 @@ const TermsOfServicePage = () => {
             
             <h2 className="text-xl font-semibold mt-8 mb-4">8. Disclaimer of Warranties</h2>
             <p>
-              OUR WEBSITE AND PRODUCTS ARE PROVIDED "AS IS" WITHOUT ANY WARRANTIES, EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+              OUR WEBSITE AND PRODUCTS ARE PROVIDED &quot;AS IS&quot; WITHOUT ANY WARRANTIES, EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
             </p>
             
             <h2 className="text-xl font-semibold mt-8 mb-4">9. Limitation of Liability</h2>
@@ -133,7 +133,7 @@ const TermsOfServicePage = () => {
             
             <h2 className="text-xl font-semibold mt-8 mb-4">10. Indemnification</h2>
             <p>
-              You agree to indemnify, defend, and hold harmless MultiPrise and its officers, directors, employees, agents, and affiliates from and against any claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from your use of our website, violation of these Terms, or violation of any rights of a third party.
+              You agree to indemnify, defend, and hold harmless MultiPrise and its officers, directors, employees, agents, and affiliates from and against any claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys&apos; fees) arising from your use of our website, violation of these Terms, or violation of any rights of a third party.
             </p>
             
             <h2 className="text-xl font-semibold mt-8 mb-4">11. Governing Law</h2>
