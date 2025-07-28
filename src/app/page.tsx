@@ -39,6 +39,7 @@ const ProductSection = () => {
       ttq.track('ViewContent', {
         content_name: 'Rotative Extensible Power Strip',
         content_type: 'product',
+        content_id: 'power_strip_001', // Ajout de l'ID manquant
         currency: 'USD',
         value: 34.99 // Prix pour un seul produit
       });
