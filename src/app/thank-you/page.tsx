@@ -57,13 +57,21 @@ const ThankYouContent = () => {
       
       // Use the standard 'Purchase' event instead of 'CompletePayment'
       // Include value data for better conversion tracking
-      // Envoi d'un événement d'achat standard sans dépendance au catalogue.
+      // Rétablissement d'un événement d'achat complet pour garantir le déclenchement
       ttq.track('Purchase', {
+        content_type: 'product',
         content_name: 'Rotative Extensible Power Strip',
         quantity: 1,
         currency: 'USD',
-        value: 59.99,
-        order_id: sessionId
+        value: 59.99, 
+        order_id: sessionId, 
+        contents: [{
+          content_id: 'power_strip_001', // ID factice pour la structure
+          content_type: 'product',
+          content_name: 'Rotative Extensible Power Strip',
+          quantity: 1,
+          price: 59.99
+        }]
       });
     }
   }, [searchParams]);

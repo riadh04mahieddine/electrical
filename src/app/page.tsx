@@ -36,7 +36,12 @@ const ProductSection = () => {
 
   useEffect(() => {
     if (typeof ttq !== 'undefined') {
-      ttq.track('ViewContent');
+      ttq.track('ViewContent', {
+        content_name: 'Rotative Extensible Power Strip',
+        content_type: 'product',
+        currency: 'USD',
+        value: 59.99 // Prix de l'offre la plus populaire
+      });
     }
   }, []);
   const quantityOptions = [
