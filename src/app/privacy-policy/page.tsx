@@ -134,7 +134,7 @@ const PrivacyPolicyPage = () => {
               To exercise these rights, please contact us using the information provided in the &quot;Contact Us&quot; section.
             </p>
             
-            <h2 className="text-xl font-semibold mt-8 mb-4">9. Children's Privacy</h2>
+            <h2 className="text-xl font-semibold mt-8 mb-4">9. Children&apos;s Privacy</h2>
             <p>
               Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
             </p>
