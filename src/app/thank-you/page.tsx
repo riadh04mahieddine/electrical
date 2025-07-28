@@ -63,14 +63,14 @@ const ThankYouContent = () => {
         content_name: 'Rotative Extensible Power Strip',
         quantity: 1,
         currency: 'USD',
-        value: 59.99, 
-        order_id: sessionId, 
+        value: 34.99,
+        order_id: sessionId,
         contents: [{
           content_id: 'power_strip_001', // ID factice pour la structure
           content_type: 'product',
           content_name: 'Rotative Extensible Power Strip',
           quantity: 1,
-          price: 59.99
+          price: 34.99
         }]
       });
     }

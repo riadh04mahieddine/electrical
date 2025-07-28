@@ -40,7 +40,7 @@ const ProductSection = () => {
         content_name: 'Rotative Extensible Power Strip',
         content_type: 'product',
         currency: 'USD',
-        value: 59.99 // Prix de l'offre la plus populaire
+        value: 34.99 // Prix pour un seul produit
       });
     }
   }, []);
